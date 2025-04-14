@@ -656,6 +656,10 @@
             <Description IsNull="True" />
             <Number>1</Number>
           </UnloadedRoom>
+          <UnloadedRoom>
+            <Description IsNull="True" />
+            <Number>2</Number>
+          </UnloadedRoom>
         </UnloadedRooms>
       </UnloadedRoomFolder>
     </Rooms>
@@ -672,7 +676,7 @@
               <Height>20</Height>
               <ID>0</ID>
               <Left>0</Left>
-              <Name>gGui1</Name>
+              <Name>GUI_principal</Name>
               <OnClick />
               <PopupStyle>Normal</PopupStyle>
               <PopupYPos>0</PopupYPos>
@@ -789,7 +793,7 @@
                 <Font>0</Font>
                 <Height>15</Height>
                 <ID>4</ID>
-                <Left>347</Left>
+                <Left>435</Left>
                 <Locked>False</Locked>
                 <Name>Label1</Name>
                 <Text>@OVERHOTSPOT@</Text>
@@ -801,6 +805,120 @@
                 <Width>289</Width>
                 <ZOrder>4</ZOrder>
               </GUILabel>
+              <GUIButton>
+                <ClickAction>RunScript</ClickAction>
+                <Clickable>True</Clickable>
+                <ClipImage>False</ClipImage>
+                <Enabled>True</Enabled>
+                <Font>0</Font>
+                <Height>14</Height>
+                <ID>5</ID>
+                <Image>0</Image>
+                <Left>330</Left>
+                <Locked>False</Locked>
+                <MouseoverImage>0</MouseoverImage>
+                <Name>Button5</Name>
+                <NewModeNumber>0</NewModeNumber>
+                <OnClick>Button5_OnClick</OnClick>
+                <PushedImage>0</PushedImage>
+                <Text>Inventario</Text>
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <Top>4</Top>
+                <Translated>True</Translated>
+                <Visible>True</Visible>
+                <Width>70</Width>
+                <ZOrder>5</ZOrder>
+              </GUIButton>
+            </Controls>
+          </GUIMain>
+          <GUIMain>
+            <NormalGUI>
+              <BackgroundColor>30723</BackgroundColor>
+              <BackgroundImage>0</BackgroundImage>
+              <BorderColor>32776</BorderColor>
+              <Clickable>True</Clickable>
+              <Height>70</Height>
+              <ID>1</ID>
+              <Left>0</Left>
+              <Name>GUI_inventario</Name>
+              <OnClick />
+              <PopupStyle>Normal</PopupStyle>
+              <PopupYPos>0</PopupYPos>
+              <Top>270</Top>
+              <Transparency>50</Transparency>
+              <Visible>False</Visible>
+              <Width>640</Width>
+              <ZOrder>0</ZOrder>
+            </NormalGUI>
+            <Controls>
+              <GUIButton>
+                <ClickAction>RunScript</ClickAction>
+                <Clickable>True</Clickable>
+                <ClipImage>False</ClipImage>
+                <Enabled>True</Enabled>
+                <Font>0</Font>
+                <Height>32</Height>
+                <ID>0</ID>
+                <Image>13</Image>
+                <Left>594</Left>
+                <Locked>False</Locked>
+                <MouseoverImage>0</MouseoverImage>
+                <Name>Button6</Name>
+                <NewModeNumber>0</NewModeNumber>
+                <OnClick>Button6_OnClick</OnClick>
+                <PushedImage>0</PushedImage>
+                <Text />
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <Top>3</Top>
+                <Translated>True</Translated>
+                <Visible>True</Visible>
+                <Width>32</Width>
+                <ZOrder>0</ZOrder>
+              </GUIButton>
+              <GUIInventory>
+                <CharacterID>-1</CharacterID>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Height>64</Height>
+                <ID>1</ID>
+                <ItemHeight>20</ItemHeight>
+                <ItemWidth>30</ItemWidth>
+                <Left>0</Left>
+                <Locked>False</Locked>
+                <Name>InventoryWindow1</Name>
+                <Top>3</Top>
+                <Translated>True</Translated>
+                <Visible>True</Visible>
+                <Width>580</Width>
+                <ZOrder>1</ZOrder>
+              </GUIInventory>
+              <GUIButton>
+                <ClickAction>RunScript</ClickAction>
+                <Clickable>True</Clickable>
+                <ClipImage>False</ClipImage>
+                <Enabled>True</Enabled>
+                <Font>0</Font>
+                <Height>32</Height>
+                <ID>2</ID>
+                <Image>8</Image>
+                <Left>594</Left>
+                <Locked>False</Locked>
+                <MouseoverImage>0</MouseoverImage>
+                <Name>Button7</Name>
+                <NewModeNumber>0</NewModeNumber>
+                <OnClick />
+                <PushedImage>0</PushedImage>
+                <Text xml:space="preserve">New Button</Text>
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <Top>36</Top>
+                <Translated>True</Translated>
+                <Visible>True</Visible>
+                <Width>32</Width>
+                <ZOrder>2</ZOrder>
+              </GUIButton>
             </Controls>
           </GUIMain>
         </GUIs>
@@ -809,7 +927,206 @@
     <InventoryItems>
       <InventoryItemFolder Name="Main">
         <SubFolders />
-        <InventoryItems />
+        <InventoryItems>
+          <InventoryItem>
+            <CursorImage>15</CursorImage>
+            <Description xml:space="preserve">Carta de la hermana de Andres Inquisidor</Description>
+            <HotspotX>14</HotspotX>
+            <HotspotY>14</HotspotY>
+            <ID>1</ID>
+            <Image>15</Image>
+            <Name>iInvCarta</Name>
+            <PlayerStartsWithItem>False</PlayerStartsWithItem>
+            <Properties />
+            <Interactions>
+              <Event Index="0" />
+              <Event Index="1" />
+              <Event Index="2" />
+              <Event Index="3" />
+              <Event Index="4" />
+            </Interactions>
+          </InventoryItem>
+          <InventoryItem>
+            <CursorImage>24</CursorImage>
+            <Description xml:space="preserve">Manual de magia para robo</Description>
+            <HotspotX>14</HotspotX>
+            <HotspotY>14</HotspotY>
+            <ID>2</ID>
+            <Image>24</Image>
+            <Name>iInvManual</Name>
+            <PlayerStartsWithItem>False</PlayerStartsWithItem>
+            <Properties />
+            <Interactions>
+              <Event Index="0" />
+              <Event Index="1" />
+              <Event Index="2" />
+              <Event Index="3" />
+              <Event Index="4" />
+            </Interactions>
+          </InventoryItem>
+          <InventoryItem>
+            <CursorImage>23</CursorImage>
+            <Description>Libro</Description>
+            <HotspotX>13</HotspotX>
+            <HotspotY>12</HotspotY>
+            <ID>3</ID>
+            <Image>23</Image>
+            <Name>iInvLibro</Name>
+            <PlayerStartsWithItem>False</PlayerStartsWithItem>
+            <Properties />
+            <Interactions>
+              <Event Index="0" />
+              <Event Index="1" />
+              <Event Index="2" />
+              <Event Index="3" />
+              <Event Index="4" />
+            </Interactions>
+          </InventoryItem>
+          <InventoryItem>
+            <CursorImage>25</CursorImage>
+            <Description xml:space="preserve">Pergamino para magia</Description>
+            <HotspotX>14</HotspotX>
+            <HotspotY>13</HotspotY>
+            <ID>4</ID>
+            <Image>25</Image>
+            <Name>iInvPergamino</Name>
+            <PlayerStartsWithItem>False</PlayerStartsWithItem>
+            <Properties />
+            <Interactions>
+              <Event Index="0" />
+              <Event Index="1" />
+              <Event Index="2" />
+              <Event Index="3" />
+              <Event Index="4" />
+            </Interactions>
+          </InventoryItem>
+          <InventoryItem>
+            <CursorImage>20</CursorImage>
+            <Description xml:space="preserve">Espejo de la familia Winchester</Description>
+            <HotspotX>12</HotspotX>
+            <HotspotY>12</HotspotY>
+            <ID>5</ID>
+            <Image>20</Image>
+            <Name>iInvEspejo</Name>
+            <PlayerStartsWithItem>True</PlayerStartsWithItem>
+            <Properties />
+            <Interactions>
+              <Event Index="0">iInvEspejo_Look</Event>
+              <Event Index="1" />
+              <Event Index="2" />
+              <Event Index="3" />
+              <Event Index="4" />
+            </Interactions>
+          </InventoryItem>
+          <InventoryItem>
+            <CursorImage>21</CursorImage>
+            <Description xml:space="preserve">Grimorio mágico</Description>
+            <HotspotX>13</HotspotX>
+            <HotspotY>14</HotspotY>
+            <ID>6</ID>
+            <Image>21</Image>
+            <Name>iInvGrimorio</Name>
+            <PlayerStartsWithItem>False</PlayerStartsWithItem>
+            <Properties />
+            <Interactions>
+              <Event Index="0" />
+              <Event Index="1" />
+              <Event Index="2" />
+              <Event Index="3" />
+              <Event Index="4" />
+            </Interactions>
+          </InventoryItem>
+          <InventoryItem>
+            <CursorImage>16</CursorImage>
+            <Description xml:space="preserve">Cenizas de un vampiro</Description>
+            <HotspotX>14</HotspotX>
+            <HotspotY>15</HotspotY>
+            <ID>7</ID>
+            <Image>16</Image>
+            <Name>iInvCenizas</Name>
+            <PlayerStartsWithItem>False</PlayerStartsWithItem>
+            <Properties />
+            <Interactions>
+              <Event Index="0" />
+              <Event Index="1" />
+              <Event Index="2" />
+              <Event Index="3" />
+              <Event Index="4" />
+            </Interactions>
+          </InventoryItem>
+          <InventoryItem>
+            <CursorImage>19</CursorImage>
+            <Description xml:space="preserve">Crucifijo de cazador Alquimista</Description>
+            <HotspotX>12</HotspotX>
+            <HotspotY>13</HotspotY>
+            <ID>8</ID>
+            <Image>19</Image>
+            <Name>iInvCrucifijo</Name>
+            <PlayerStartsWithItem>False</PlayerStartsWithItem>
+            <Properties />
+            <Interactions>
+              <Event Index="0" />
+              <Event Index="1" />
+              <Event Index="2" />
+              <Event Index="3" />
+              <Event Index="4" />
+            </Interactions>
+          </InventoryItem>
+          <InventoryItem>
+            <CursorImage>18</CursorImage>
+            <Description xml:space="preserve">Cristal de esencia vampirica</Description>
+            <HotspotX>12</HotspotX>
+            <HotspotY>14</HotspotY>
+            <ID>9</ID>
+            <Image>18</Image>
+            <Name>iInvCristal</Name>
+            <PlayerStartsWithItem>False</PlayerStartsWithItem>
+            <Properties />
+            <Interactions>
+              <Event Index="0" />
+              <Event Index="1" />
+              <Event Index="2" />
+              <Event Index="3" />
+              <Event Index="4" />
+            </Interactions>
+          </InventoryItem>
+          <InventoryItem>
+            <CursorImage>22</CursorImage>
+            <Description xml:space="preserve">Grimorio de magia para abrir cerraduras</Description>
+            <HotspotX>13</HotspotX>
+            <HotspotY>14</HotspotY>
+            <ID>10</ID>
+            <Image>22</Image>
+            <Name>iInvGrimorioMagico</Name>
+            <PlayerStartsWithItem>False</PlayerStartsWithItem>
+            <Properties />
+            <Interactions>
+              <Event Index="0" />
+              <Event Index="1" />
+              <Event Index="2" />
+              <Event Index="3" />
+              <Event Index="4" />
+            </Interactions>
+          </InventoryItem>
+          <InventoryItem>
+            <CursorImage>14</CursorImage>
+            <Description xml:space="preserve">Archivo secreto del caso winchester</Description>
+            <HotspotX>14</HotspotX>
+            <HotspotY>14</HotspotY>
+            <ID>11</ID>
+            <Image>14</Image>
+            <Name>iInvArchivo</Name>
+            <PlayerStartsWithItem>False</PlayerStartsWithItem>
+            <Properties />
+            <Interactions>
+              <Event Index="0" />
+              <Event Index="1" />
+              <Event Index="2" />
+              <Event Index="3" />
+              <Event Index="4" />
+            </Interactions>
+          </InventoryItem>
+        </InventoryItems>
       </InventoryItemFolder>
     </InventoryItems>
     <TextParser>
@@ -987,10 +1304,52 @@
             <BlinkingView>0</BlinkingView>
             <Clickable>True</Clickable>
             <DiagonalLoops>True</DiagonalLoops>
+            <ID>1</ID>
+            <IdleAnimationDelay>4</IdleAnimationDelay>
+            <IdleDelay>20</IdleDelay>
+            <IdleView>0</IdleView>
+            <MovementLinkedToAnimation>True</MovementLinkedToAnimation>
+            <MovementSpeed>3</MovementSpeed>
+            <MovementSpeedX>0</MovementSpeedX>
+            <MovementSpeedY>0</MovementSpeedY>
+            <NormalView>2</NormalView>
+            <Properties />
+            <RealName xml:space="preserve">Andres Inquisidor</RealName>
+            <ScriptName>cInquisidor</ScriptName>
+            <Solid>True</Solid>
+            <SpeechAnimationDelay>5</SpeechAnimationDelay>
+            <SpeechColor>63</SpeechColor>
+            <SpeechView>0</SpeechView>
+            <StartX>388</StartX>
+            <StartY>144</StartY>
+            <StartingRoom>1</StartingRoom>
+            <ThinkingView>0</ThinkingView>
+            <TurnBeforeWalking>True</TurnBeforeWalking>
+            <UniformMovementSpeed>True</UniformMovementSpeed>
+            <UseRoomAreaLighting>True</UseRoomAreaLighting>
+            <UseRoomAreaScaling>True</UseRoomAreaScaling>
+            <Interactions>
+              <Event Index="0" />
+              <Event Index="1" />
+              <Event Index="2">cChar1_Talk</Event>
+              <Event Index="3" />
+              <Event Index="4" />
+              <Event Index="5" />
+              <Event Index="6" />
+              <Event Index="7" />
+            </Interactions>
+          </Character>
+          <Character>
+            <AdjustSpeedWithScaling>False</AdjustSpeedWithScaling>
+            <AdjustVolumeWithScaling>True</AdjustVolumeWithScaling>
+            <AnimationDelay>4</AnimationDelay>
+            <BlinkingView>0</BlinkingView>
+            <Clickable>True</Clickable>
+            <DiagonalLoops>True</DiagonalLoops>
             <ID>0</ID>
             <IdleAnimationDelay>9</IdleAnimationDelay>
             <IdleDelay>20</IdleDelay>
-            <IdleView>0</IdleView>
+            <IdleView>1</IdleView>
             <MovementLinkedToAnimation>True</MovementLinkedToAnimation>
             <MovementSpeed>9</MovementSpeed>
             <MovementSpeedX>3</MovementSpeedX>
@@ -1003,8 +1362,8 @@
             <SpeechAnimationDelay>5</SpeechAnimationDelay>
             <SpeechColor>12</SpeechColor>
             <SpeechView>0</SpeechView>
-            <StartX>36</StartX>
-            <StartY>168</StartY>
+            <StartX>152</StartX>
+            <StartY>239</StartY>
             <StartingRoom>1</StartingRoom>
             <ThinkingView>0</ThinkingView>
             <TurnBeforeWalking>True</TurnBeforeWalking>
@@ -1029,7 +1388,22 @@
     <Dialogs>
       <DialogFolder Name="Main">
         <SubFolders />
-        <Dialogs />
+        <Dialogs>
+          <Dialog>
+            <ID>0</ID>
+            <Name>entradaArchivos</Name>
+            <ShowTextParser>False</ShowTextParser>
+            <Script><![CDATA[// Dialog script file
+@S  // Dialog startup entry point
+cCharacter: Buenas Andres, ¿puedo entrar a los archivos?
+  Wait(10);
+cInquisidor: Los archivos se encuentran cerrados. No puedo dejarte entrar.
+
+return
+]]></Script>
+            <DialogOptions />
+          </Dialog>
+        </Dialogs>
       </DialogFolder>
     </Dialogs>
     <Cursors>
@@ -1569,6 +1943,26 @@
                   </Sprite>
                 </Sprites>
               </SpriteFolder>
+              <SpriteFolder Name="Andres_Inquisidor">
+                <SubFolders />
+                <Sprites>
+                  <Sprite Slot="7" Width="160" Height="160" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>D:\FDEJ\Noches de Volkeria\Sprites\Hector_Inquisidor\Idle.png</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>160</ImportHeight>
+                      <ImportWidth>160</ImportWidth>
+                      <ImportAsTile>False</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                </Sprites>
+              </SpriteFolder>
             </SubFolders>
             <Sprites />
           </SpriteFolder>
@@ -1650,6 +2044,206 @@
                   <ImportAlphaChannel>True</ImportAlphaChannel>
                 </Source>
               </Sprite>
+              <Sprite Slot="8" Width="32" Height="32" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>D:\FDEJ\Noches de Volkeria\GUI\down_inventory.png</FileName>
+                  <OffsetX>0</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <ImportHeight>32</ImportHeight>
+                  <ImportWidth>32</ImportWidth>
+                  <ImportAsTile>False</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="13" Width="32" Height="32" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>D:\FDEJ\Noches de Volkeria\GUI\up_inventory.png</FileName>
+                  <OffsetX>0</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <ImportHeight>32</ImportHeight>
+                  <ImportWidth>32</ImportWidth>
+                  <ImportAsTile>False</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+            </Sprites>
+          </SpriteFolder>
+          <SpriteFolder Name="Items">
+            <SubFolders />
+            <Sprites>
+              <Sprite Slot="14" Width="24" Height="24" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>D:\FDEJ\Noches de Volkeria\Items\item_archivo.png</FileName>
+                  <OffsetX>0</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <ImportHeight>24</ImportHeight>
+                  <ImportWidth>24</ImportWidth>
+                  <ImportAsTile>False</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="15" Width="24" Height="24" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>D:\FDEJ\Noches de Volkeria\Items\item_carta.png</FileName>
+                  <OffsetX>0</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <ImportHeight>24</ImportHeight>
+                  <ImportWidth>24</ImportWidth>
+                  <ImportAsTile>False</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="16" Width="24" Height="24" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>D:\FDEJ\Noches de Volkeria\Items\item_cenizas.png</FileName>
+                  <OffsetX>0</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <ImportHeight>24</ImportHeight>
+                  <ImportWidth>24</ImportWidth>
+                  <ImportAsTile>False</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="18" Width="24" Height="24" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>D:\FDEJ\Noches de Volkeria\Items\item_cristal_vampirico.png</FileName>
+                  <OffsetX>0</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <ImportHeight>24</ImportHeight>
+                  <ImportWidth>24</ImportWidth>
+                  <ImportAsTile>False</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="19" Width="24" Height="24" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>D:\FDEJ\Noches de Volkeria\Items\item_cruzifijo.png</FileName>
+                  <OffsetX>0</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <ImportHeight>24</ImportHeight>
+                  <ImportWidth>24</ImportWidth>
+                  <ImportAsTile>False</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="20" Width="24" Height="24" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>D:\FDEJ\Noches de Volkeria\Items\item_espejo.png</FileName>
+                  <OffsetX>0</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <ImportHeight>24</ImportHeight>
+                  <ImportWidth>24</ImportWidth>
+                  <ImportAsTile>False</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="21" Width="24" Height="24" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>D:\FDEJ\Noches de Volkeria\Items\item_grimorio.png</FileName>
+                  <OffsetX>0</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <ImportHeight>24</ImportHeight>
+                  <ImportWidth>24</ImportWidth>
+                  <ImportAsTile>False</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="22" Width="24" Height="24" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>D:\FDEJ\Noches de Volkeria\Items\item_grimorio_magico.png</FileName>
+                  <OffsetX>0</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <ImportHeight>24</ImportHeight>
+                  <ImportWidth>24</ImportWidth>
+                  <ImportAsTile>False</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="23" Width="24" Height="24" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>D:\FDEJ\Noches de Volkeria\Items\item_libro.png</FileName>
+                  <OffsetX>0</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <ImportHeight>24</ImportHeight>
+                  <ImportWidth>24</ImportWidth>
+                  <ImportAsTile>False</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="24" Width="24" Height="24" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>D:\FDEJ\Noches de Volkeria\Items\item_manual.png</FileName>
+                  <OffsetX>0</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <ImportHeight>24</ImportHeight>
+                  <ImportWidth>24</ImportWidth>
+                  <ImportAsTile>False</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="25" Width="24" Height="24" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>D:\FDEJ\Noches de Volkeria\Items\item_pergamino.png</FileName>
+                  <OffsetX>0</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <ImportHeight>24</ImportHeight>
+                  <ImportWidth>24</ImportWidth>
+                  <ImportAsTile>False</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
             </Sprites>
           </SpriteFolder>
         </SubFolders>
@@ -1682,8 +2276,16 @@
             <Loops>
               <Loop>
                 <ID>0</ID>
-                <RunNextLoop>True</RunNextLoop>
-                <Frames />
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <Delay>0</Delay>
+                    <Flipped>False</Flipped>
+                    <ID>0</ID>
+                    <Image>3</Image>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
               </Loop>
               <Loop>
                 <ID>1</ID>
@@ -1788,12 +2390,60 @@
               </Loop>
             </Loops>
           </View>
+          <View>
+            <ID>2</ID>
+            <Name>View2</Name>
+            <Loops>
+              <Loop>
+                <ID>0</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <Delay>0</Delay>
+                    <Flipped>False</Flipped>
+                    <ID>0</ID>
+                    <Image>7</Image>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>1</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <Delay>0</Delay>
+                    <Flipped>False</Flipped>
+                    <ID>0</ID>
+                    <Image>0</Image>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>2</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <Delay>0</Delay>
+                    <Flipped>False</Flipped>
+                    <ID>0</ID>
+                    <Image>0</Image>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>3</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames />
+              </Loop>
+            </Loops>
+          </View>
         </Views>
       </ViewFolder>
     </Views>
-    <DeletedViews>
-      <ViewID>2</ViewID>
-    </DeletedViews>
+    <DeletedViews />
     <Scripts>
       <ScriptFolder Name="Main">
         <SubFolders />
