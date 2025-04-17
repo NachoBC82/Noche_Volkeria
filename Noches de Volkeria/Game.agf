@@ -29,7 +29,7 @@
       <DialogOptionsBackwards>False</DialogOptionsBackwards>
       <DialogOptionsBullet>0</DialogOptionsBullet>
       <DialogOptionsGUI>0</DialogOptionsGUI>
-      <DialogOptionsGap>0</DialogOptionsGap>
+      <DialogOptionsGap>8</DialogOptionsGap>
       <DialogScriptNarrateFunction IsNull="True" />
       <DialogScriptSayFunction IsNull="True" />
       <DisplayMultipleInventory>False</DisplayMultipleInventory>
@@ -660,6 +660,14 @@
             <Description IsNull="True" />
             <Number>2</Number>
           </UnloadedRoom>
+          <UnloadedRoom>
+            <Description IsNull="True" />
+            <Number>3</Number>
+          </UnloadedRoom>
+          <UnloadedRoom>
+            <Description IsNull="True" />
+            <Number>4</Number>
+          </UnloadedRoom>
         </UnloadedRooms>
       </UnloadedRoomFolder>
     </Rooms>
@@ -692,8 +700,8 @@
                 <Clickable>True</Clickable>
                 <ClipImage>False</ClipImage>
                 <Enabled>True</Enabled>
-                <Font>0</Font>
-                <Height>14</Height>
+                <Font>3</Font>
+                <Height>15</Height>
                 <ID>0</ID>
                 <Image>0</Image>
                 <Left>10</Left>
@@ -705,7 +713,7 @@
                 <PushedImage>0</PushedImage>
                 <Text>Andar</Text>
                 <TextAlignment>TopCenter</TextAlignment>
-                <TextColor>0</TextColor>
+                <TextColor>65535</TextColor>
                 <Top>4</Top>
                 <Translated>True</Translated>
                 <Visible>True</Visible>
@@ -717,8 +725,8 @@
                 <Clickable>True</Clickable>
                 <ClipImage>False</ClipImage>
                 <Enabled>True</Enabled>
-                <Font>0</Font>
-                <Height>14</Height>
+                <Font>3</Font>
+                <Height>15</Height>
                 <ID>1</ID>
                 <Image>0</Image>
                 <Left>90</Left>
@@ -730,7 +738,7 @@
                 <PushedImage>0</PushedImage>
                 <Text>Mirar</Text>
                 <TextAlignment>TopCenter</TextAlignment>
-                <TextColor>0</TextColor>
+                <TextColor>65535</TextColor>
                 <Top>4</Top>
                 <Translated>True</Translated>
                 <Visible>True</Visible>
@@ -742,8 +750,8 @@
                 <Clickable>True</Clickable>
                 <ClipImage>False</ClipImage>
                 <Enabled>True</Enabled>
-                <Font>0</Font>
-                <Height>14</Height>
+                <Font>3</Font>
+                <Height>15</Height>
                 <ID>2</ID>
                 <Image>0</Image>
                 <Left>170</Left>
@@ -753,9 +761,9 @@
                 <NewModeNumber>2</NewModeNumber>
                 <OnClick />
                 <PushedImage>0</PushedImage>
-                <Text>Accion</Text>
+                <Text>Acción</Text>
                 <TextAlignment>TopCenter</TextAlignment>
-                <TextColor>0</TextColor>
+                <TextColor>65535</TextColor>
                 <Top>4</Top>
                 <Translated>True</Translated>
                 <Visible>True</Visible>
@@ -767,8 +775,8 @@
                 <Clickable>True</Clickable>
                 <ClipImage>False</ClipImage>
                 <Enabled>True</Enabled>
-                <Font>0</Font>
-                <Height>14</Height>
+                <Font>3</Font>
+                <Height>15</Height>
                 <ID>3</ID>
                 <Image>0</Image>
                 <Left>250</Left>
@@ -780,7 +788,7 @@
                 <PushedImage>0</PushedImage>
                 <Text>Hablar</Text>
                 <TextAlignment>TopCenter</TextAlignment>
-                <TextColor>0</TextColor>
+                <TextColor>65535</TextColor>
                 <Top>4</Top>
                 <Translated>True</Translated>
                 <Visible>True</Visible>
@@ -790,7 +798,7 @@
               <GUILabel>
                 <Clickable>True</Clickable>
                 <Enabled>True</Enabled>
-                <Font>0</Font>
+                <Font>3</Font>
                 <Height>15</Height>
                 <ID>4</ID>
                 <Left>435</Left>
@@ -798,7 +806,7 @@
                 <Name>Label1</Name>
                 <Text>@OVERHOTSPOT@</Text>
                 <TextAlignment>Left</TextAlignment>
-                <TextColor>0</TextColor>
+                <TextColor>65535</TextColor>
                 <Top>4</Top>
                 <Translated>True</Translated>
                 <Visible>True</Visible>
@@ -810,8 +818,8 @@
                 <Clickable>True</Clickable>
                 <ClipImage>False</ClipImage>
                 <Enabled>True</Enabled>
-                <Font>0</Font>
-                <Height>14</Height>
+                <Font>3</Font>
+                <Height>15</Height>
                 <ID>5</ID>
                 <Image>0</Image>
                 <Left>330</Left>
@@ -823,7 +831,7 @@
                 <PushedImage>0</PushedImage>
                 <Text>Inventario</Text>
                 <TextAlignment>TopCenter</TextAlignment>
-                <TextColor>0</TextColor>
+                <TextColor>65535</TextColor>
                 <Top>4</Top>
                 <Translated>True</Translated>
                 <Visible>True</Visible>
@@ -918,6 +926,137 @@
                 <Visible>True</Visible>
                 <Width>32</Width>
                 <ZOrder>2</ZOrder>
+              </GUIButton>
+            </Controls>
+          </GUIMain>
+          <GUIMain>
+            <NormalGUI>
+              <BackgroundColor>30723</BackgroundColor>
+              <BackgroundImage>0</BackgroundImage>
+              <BorderColor>32776</BorderColor>
+              <Clickable>True</Clickable>
+              <Height>50</Height>
+              <ID>2</ID>
+              <Left>220</Left>
+              <Name>gSave</Name>
+              <OnClick />
+              <PopupStyle>Normal</PopupStyle>
+              <PopupYPos>0</PopupYPos>
+              <Top>155</Top>
+              <Transparency>0</Transparency>
+              <Visible>False</Visible>
+              <Width>200</Width>
+              <ZOrder>1</ZOrder>
+            </NormalGUI>
+            <Controls>
+              <GUITextBox>
+                <Clickable>False</Clickable>
+                <Enabled>True</Enabled>
+                <Font>0</Font>
+                <Height>28</Height>
+                <ID>0</ID>
+                <Left>199</Left>
+                <Locked>False</Locked>
+                <Name>TextBox1</Name>
+                <OnActivate />
+                <ShowBorder>False</ShowBorder>
+                <Text />
+                <TextColor>0</TextColor>
+                <Top>11</Top>
+                <Translated>True</Translated>
+                <Visible>False</Visible>
+                <Width>179</Width>
+                <ZOrder>0</ZOrder>
+              </GUITextBox>
+              <GUILabel>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Font>3</Font>
+                <Height>16</Height>
+                <ID>1</ID>
+                <Left>53</Left>
+                <Locked>False</Locked>
+                <Name>Label2</Name>
+                <Text>Guardando...</Text>
+                <TextAlignment>Left</TextAlignment>
+                <TextColor>65535</TextColor>
+                <Top>17</Top>
+                <Translated>True</Translated>
+                <Visible>True</Visible>
+                <Width>94</Width>
+                <ZOrder>1</ZOrder>
+              </GUILabel>
+            </Controls>
+          </GUIMain>
+          <GUIMain>
+            <NormalGUI>
+              <BackgroundColor>30723</BackgroundColor>
+              <BackgroundImage>0</BackgroundImage>
+              <BorderColor>32776</BorderColor>
+              <Clickable>True</Clickable>
+              <Height>75</Height>
+              <ID>3</ID>
+              <Left>270</Left>
+              <Name>gPause</Name>
+              <OnClick />
+              <PopupStyle>Normal</PopupStyle>
+              <PopupYPos>0</PopupYPos>
+              <Top>142</Top>
+              <Transparency>0</Transparency>
+              <Visible>False</Visible>
+              <Width>100</Width>
+              <ZOrder>0</ZOrder>
+            </NormalGUI>
+            <Controls>
+              <GUIButton>
+                <ClickAction>RunScript</ClickAction>
+                <Clickable>True</Clickable>
+                <ClipImage>False</ClipImage>
+                <Enabled>True</Enabled>
+                <Font>3</Font>
+                <Height>16</Height>
+                <ID>0</ID>
+                <Image>0</Image>
+                <Left>16</Left>
+                <Locked>False</Locked>
+                <MouseoverImage>0</MouseoverImage>
+                <Name>bSave</Name>
+                <NewModeNumber>0</NewModeNumber>
+                <OnClick>bSave_OnClick</OnClick>
+                <PushedImage>0</PushedImage>
+                <Text>Guardar</Text>
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>65535</TextColor>
+                <Top>10</Top>
+                <Translated>True</Translated>
+                <Visible>True</Visible>
+                <Width>70</Width>
+                <ZOrder>0</ZOrder>
+              </GUIButton>
+              <GUIButton>
+                <ClickAction>RunScript</ClickAction>
+                <Clickable>True</Clickable>
+                <ClipImage>False</ClipImage>
+                <Enabled>True</Enabled>
+                <Font>3</Font>
+                <Height>16</Height>
+                <ID>1</ID>
+                <Image>0</Image>
+                <Left>16</Left>
+                <Locked>False</Locked>
+                <MouseoverImage>0</MouseoverImage>
+                <Name>bExit</Name>
+                <NewModeNumber>0</NewModeNumber>
+                <OnClick>bExit_OnClick</OnClick>
+                <PushedImage>0</PushedImage>
+                <Text>Salir</Text>
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>65535</TextColor>
+                <Top>46</Top>
+                <Translated>True</Translated>
+                <Visible>True</Visible>
+                <Width>70</Width>
+                <ZOrder>1</ZOrder>
               </GUIButton>
             </Controls>
           </GUIMain>
@@ -1362,9 +1501,9 @@
             <SpeechAnimationDelay>5</SpeechAnimationDelay>
             <SpeechColor>12</SpeechColor>
             <SpeechView>0</SpeechView>
-            <StartX>152</StartX>
-            <StartY>239</StartY>
-            <StartingRoom>1</StartingRoom>
+            <StartX>676</StartX>
+            <StartY>351</StartY>
+            <StartingRoom>3</StartingRoom>
             <ThinkingView>0</ThinkingView>
             <TurnBeforeWalking>True</TurnBeforeWalking>
             <UniformMovementSpeed>True</UniformMovementSpeed>
@@ -1402,14 +1541,108 @@ return
 
 @1
 cCharacter: Entiendo, buscaré la manera de entrar.
+stop
 
-stop]]></Script>
+@2
+stop
+]]></Script>
             <DialogOptions>
               <DialogOption>
                 <ID>1</ID>
                 <Say>False</Say>
                 <Show>True</Show>
-                <Text>Entendido</Text>
+                <Text xml:space="preserve">Entendido, buscaré la manera de entrar</Text>
+              </DialogOption>
+              <DialogOption>
+                <ID>2</ID>
+                <Say>False</Say>
+                <Show>True</Show>
+                <Text>Adios</Text>
+              </DialogOption>
+            </DialogOptions>
+          </Dialog>
+          <Dialog>
+            <ID>1</ID>
+            <Name>dFinDelJuego</Name>
+            <ShowTextParser>False</ShowTextParser>
+            <Script><![CDATA[// Dialog script file
+
+@S  // Dialog startup entry point
+cCharacter: Ya tengo el archivo, Andrés.
+cInquisidor: El #622...
+cInquisidor: Tú y tu maldita obsesión por las puertas que deberían seguir cerradas.
+return
+
+// ---------- Opciones del jugador ----------
+@1
+cCharacter: Encontré algo... sobre la muerte de mis padres.
+cInquisidor: Entonces ya sabes más de lo que deberías.
+cCharacter: ¿Por qué todos los implicados murieron en cazas posteriores?
+cInquisidor: Porque la verdad es un veneno lento. Uno que todos acaban bebiendo.
+cInquisidor: Y si sigues indagando, tú también caerás.
+return
+
+@2
+cCharacter: ¿Quién puso los acertijos en los archivos?
+cInquisidor: ¿Crees que fui yo?
+cCharacter: No, pero sabes quién fue.
+cInquisidor: Fue Jean Renoir. Dijo que si alguien llegaba hasta el archivo, debía ser merecedor de la información.
+cCharacter: Pues pasé su prueba.
+return
+
+@3
+cCharacter: Solo quedan tres vivos: Heimer, Anthony y Jean.
+cInquisidor: Tres pilares con secretos enterrados en su conciencia.
+cCharacter: ¿Sabías que estaban implicados?
+cInquisidor: Sabía que seguían vivos... y eso ya era sospechoso.
+cInquisidor: Ten cuidado con ellos, Héctor. Cada uno guarda una pieza del puzle, pero podrían matarte por protegerla.
+return
+
+@4
+cCharacter: ¿Por qué no me lo dijiste antes?
+cInquisidor: Porque mi lealtad es hacia el equilibrio, no hacia tu dolor.
+cCharacter: Eso no es una excusa.
+cInquisidor: Es un principio. El único que me mantiene vivo en esta cloaca de traiciones.
+return
+
+@5
+cCharacter: Gracias... por no detenerme.
+cInquisidor: No lo hice por ti. Lo hice por ella.
+cCharacter: ¿Anna?
+cInquisidor: No. Tu madre. Ella también merecía respuestas.
+stop
+
+]]></Script>
+            <DialogOptions>
+              <DialogOption>
+                <ID>1</ID>
+                <Say>True</Say>
+                <Show>True</Show>
+                <Text xml:space="preserve">Encontré algo... sobre la muerte de mis padres.</Text>
+              </DialogOption>
+              <DialogOption>
+                <ID>2</ID>
+                <Say>True</Say>
+                <Show>True</Show>
+                <Text xml:space="preserve">¿Quién puso los acertijos en los archivos?</Text>
+              </DialogOption>
+              <DialogOption>
+                <ID>3</ID>
+                <Say>True</Say>
+                <Show>True</Show>
+                <Text xml:space="preserve">Solo quedan tres vivos: Heimer, Anthony y Jean.</Text>
+              </DialogOption>
+              <DialogOption>
+                <ID>4</ID>
+                <Say>True</Say>
+                <Show>True</Show>
+                <Text xml:space="preserve">¿Por qué no me lo dijiste antes?</Text>
+              </DialogOption>
+              <DialogOption>
+                <ID>5</ID>
+                <Say>True</Say>
+                <Show>True</Show>
+                <Text xml:space="preserve">Gracias... por no detenerme.</Text>
               </DialogOption>
             </DialogOptions>
           </Dialog>
@@ -1474,10 +1707,10 @@ stop]]></Script>
         <AnimateOnlyOnHotspots>False</AnimateOnlyOnHotspots>
         <AnimateOnlyWhenMoving>False</AnimateOnlyWhenMoving>
         <AnimationDelay>5</AnimationDelay>
-        <HotspotX>0</HotspotX>
-        <HotspotY>0</HotspotY>
+        <HotspotX>12</HotspotX>
+        <HotspotY>11</HotspotY>
         <ID>4</ID>
-        <Image>0</Image>
+        <Image>11</Image>
         <Name xml:space="preserve">Use inv</Name>
         <StandardMode>False</StandardMode>
         <View>0</View>
@@ -1487,10 +1720,10 @@ stop]]></Script>
         <AnimateOnlyOnHotspots>False</AnimateOnlyOnHotspots>
         <AnimateOnlyWhenMoving>False</AnimateOnlyWhenMoving>
         <AnimationDelay>5</AnimationDelay>
-        <HotspotX>0</HotspotX>
-        <HotspotY>0</HotspotY>
+        <HotspotX>11</HotspotX>
+        <HotspotY>10</HotspotY>
         <ID>5</ID>
-        <Image>0</Image>
+        <Image>11</Image>
         <Name xml:space="preserve">Pick up</Name>
         <StandardMode>False</StandardMode>
         <View>0</View>
@@ -1500,10 +1733,10 @@ stop]]></Script>
         <AnimateOnlyOnHotspots>False</AnimateOnlyOnHotspots>
         <AnimateOnlyWhenMoving>False</AnimateOnlyWhenMoving>
         <AnimationDelay>5</AnimationDelay>
-        <HotspotX>0</HotspotX>
-        <HotspotY>0</HotspotY>
+        <HotspotX>11</HotspotX>
+        <HotspotY>10</HotspotY>
         <ID>6</ID>
-        <Image>0</Image>
+        <Image>11</Image>
         <Name>Pointer</Name>
         <StandardMode>False</StandardMode>
         <View>0</View>
@@ -1513,10 +1746,10 @@ stop]]></Script>
         <AnimateOnlyOnHotspots>False</AnimateOnlyOnHotspots>
         <AnimateOnlyWhenMoving>False</AnimateOnlyWhenMoving>
         <AnimationDelay>5</AnimationDelay>
-        <HotspotX>0</HotspotX>
-        <HotspotY>0</HotspotY>
+        <HotspotX>11</HotspotX>
+        <HotspotY>10</HotspotY>
         <ID>7</ID>
-        <Image>0</Image>
+        <Image>11</Image>
         <Name>Wait</Name>
         <StandardMode>False</StandardMode>
         <View>0</View>
@@ -2098,6 +2331,21 @@ stop]]></Script>
                   <ImportAlphaChannel>True</ImportAlphaChannel>
                 </Source>
               </Sprite>
+              <Sprite Slot="27" Width="32" Height="32" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>C:\Users\manue\Desktop\FDEJ\Noche_Volkeria\GUI\select_dialog.png</FileName>
+                  <OffsetX>0</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <ImportHeight>32</ImportHeight>
+                  <ImportWidth>32</ImportWidth>
+                  <ImportAsTile>False</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
             </Sprites>
           </SpriteFolder>
           <SpriteFolder Name="Items">
@@ -2487,7 +2735,9 @@ stop]]></Script>
         </Views>
       </ViewFolder>
     </Views>
-    <DeletedViews />
+    <DeletedViews>
+      <ViewID>3</ViewID>
+    </DeletedViews>
     <Scripts>
       <ScriptFolder Name="Main">
         <SubFolders />
