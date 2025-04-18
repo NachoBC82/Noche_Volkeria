@@ -12,7 +12,7 @@
       <AntiAliasFonts>False</AntiAliasFonts>
       <AntiGlideMode>True</AntiGlideMode>
       <AttachDataToExe>False</AttachDataToExe>
-      <AudioIndexer>5</AudioIndexer>
+      <AudioIndexer>13</AudioIndexer>
       <AutoMoveInWalkMode>True</AutoMoveInWalkMode>
       <BackwardsText>False</BackwardsText>
       <BuildTargets>Windows</BuildTargets>
@@ -1060,6 +1060,118 @@
               </GUIButton>
             </Controls>
           </GUIMain>
+          <GUIMain>
+            <NormalGUI>
+              <BackgroundColor>0</BackgroundColor>
+              <BackgroundImage>28</BackgroundImage>
+              <BorderColor>0</BorderColor>
+              <Clickable>True</Clickable>
+              <Height>360</Height>
+              <ID>4</ID>
+              <Left>0</Left>
+              <Name>gDiario</Name>
+              <OnClick>gDiario_OnClick</OnClick>
+              <PopupStyle>Normal</PopupStyle>
+              <PopupYPos>0</PopupYPos>
+              <Top>0</Top>
+              <Transparency>0</Transparency>
+              <Visible>False</Visible>
+              <Width>640</Width>
+              <ZOrder>0</ZOrder>
+            </NormalGUI>
+            <Controls>
+              <GUILabel>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Font>3</Font>
+                <Height>17</Height>
+                <ID>0</ID>
+                <Left>65</Left>
+                <Locked>False</Locked>
+                <Name>Label3</Name>
+                <Text>Objetivos:</Text>
+                <TextAlignment>Left</TextAlignment>
+                <TextColor>65535</TextColor>
+                <Top>26</Top>
+                <Translated>True</Translated>
+                <Visible>True</Visible>
+                <Width>205</Width>
+                <ZOrder>0</ZOrder>
+              </GUILabel>
+              <GUILabel>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Font>3</Font>
+                <Height>14</Height>
+                <ID>1</ID>
+                <Left>72</Left>
+                <Locked>False</Locked>
+                <Name>obj1</Name>
+                <Text xml:space="preserve">- Encontrar el archivo #622</Text>
+                <TextAlignment>Left</TextAlignment>
+                <TextColor>65535</TextColor>
+                <Top>52</Top>
+                <Translated>True</Translated>
+                <Visible>True</Visible>
+                <Width>198</Width>
+                <ZOrder>1</ZOrder>
+              </GUILabel>
+              <GUILabel>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Font>3</Font>
+                <Height>15</Height>
+                <ID>2</ID>
+                <Left>74</Left>
+                <Locked>False</Locked>
+                <Name>obj2</Name>
+                <Text xml:space="preserve">- Entrar en los archivos</Text>
+                <TextAlignment>Left</TextAlignment>
+                <TextColor>65535</TextColor>
+                <Top>69</Top>
+                <Translated>True</Translated>
+                <Visible>False</Visible>
+                <Width>198</Width>
+                <ZOrder>2</ZOrder>
+              </GUILabel>
+              <GUILabel>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Font>3</Font>
+                <Height>17</Height>
+                <ID>3</ID>
+                <Left>74</Left>
+                <Locked>False</Locked>
+                <Name>obj3</Name>
+                <Text xml:space="preserve">- Abrir la caja fuerte</Text>
+                <TextAlignment>Left</TextAlignment>
+                <TextColor>65535</TextColor>
+                <Top>87</Top>
+                <Translated>True</Translated>
+                <Visible>False</Visible>
+                <Width>199</Width>
+                <ZOrder>3</ZOrder>
+              </GUILabel>
+              <GUILabel>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Font>3</Font>
+                <Height>30</Height>
+                <ID>4</ID>
+                <Left>74</Left>
+                <Locked>False</Locked>
+                <Name>obj4</Name>
+                <Text xml:space="preserve">- Mostrarle el archivo #622 a Andrés</Text>
+                <TextAlignment>Left</TextAlignment>
+                <TextColor>65535</TextColor>
+                <Top>107</Top>
+                <Translated>True</Translated>
+                <Visible>False</Visible>
+                <Width>201</Width>
+                <ZOrder>4</ZOrder>
+              </GUILabel>
+            </Controls>
+          </GUIMain>
         </GUIs>
       </GUIFolder>
     </GUIs>
@@ -1453,7 +1565,7 @@
             <MovementSpeedY>0</MovementSpeedY>
             <NormalView>2</NormalView>
             <Properties />
-            <RealName xml:space="preserve">Andres Inquisidor</RealName>
+            <RealName xml:space="preserve">Andrés Inquisidor</RealName>
             <ScriptName>cInquisidor</ScriptName>
             <Solid>True</Solid>
             <SpeechAnimationDelay>5</SpeechAnimationDelay>
@@ -2346,6 +2458,21 @@ stop
                   <ImportAlphaChannel>True</ImportAlphaChannel>
                 </Source>
               </Sprite>
+              <Sprite Slot="28" Width="640" Height="360" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>C:\Users\manue\Desktop\FDEJ\Noche_Volkeria\GUI\Diario.png</FileName>
+                  <OffsetX>0</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <ImportHeight>360</ImportHeight>
+                  <ImportWidth>640</ImportWidth>
+                  <ImportAsTile>False</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
             </Sprites>
           </SpriteFolder>
           <SpriteFolder Name="Items">
@@ -2781,8 +2908,8 @@ stop
                 <DefaultRepeat>Inherit</DefaultRepeat>
                 <DefaultVolume>-1</DefaultVolume>
                 <FileType>MP3</FileType>
-                <ID>0</ID>
-                <Index>5</Index>
+                <ID>1</ID>
+                <Index>8</Index>
                 <ScriptName>aMusic0</ScriptName>
                 <SourceFileName>C:\Users\manue\Desktop\FDEJ\Noche_Volkeria\Music\music0.mp3</SourceFileName>
                 <Type>2</Type>
@@ -2799,7 +2926,60 @@ stop
           </AudioClipFolder>
           <AudioClipFolder Name="Sounds">
             <SubFolders />
-            <AudioClips />
+            <AudioClips>
+              <AudioClip>
+                <BundlingType>InGameEXE</BundlingType>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <DefaultVolume>-1</DefaultVolume>
+                <FileType>MP3</FileType>
+                <ID>2</ID>
+                <Index>11</Index>
+                <ScriptName>aEscribir</ScriptName>
+                <SourceFileName>C:\Users\manue\Desktop\FDEJ\Noche_Volkeria\Music\escribir.mp3</SourceFileName>
+                <Type>3</Type>
+                <FileLastModifiedDate>2025-04-18 19:05:20Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <BundlingType>InSeparateVOX</BundlingType>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <DefaultVolume>-1</DefaultVolume>
+                <FileType>MP3</FileType>
+                <ID>0</ID>
+                <Index>7</Index>
+                <ScriptName>aPasos</ScriptName>
+                <SourceFileName>C:\Users\manue\Desktop\FDEJ\Noche_Volkeria\Music\pasos.mp3</SourceFileName>
+                <Type>2</Type>
+                <FileLastModifiedDate>2025-04-18 18:55:26Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <BundlingType>InGameEXE</BundlingType>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <DefaultVolume>-1</DefaultVolume>
+                <FileType>MP3</FileType>
+                <ID>3</ID>
+                <Index>12</Index>
+                <ScriptName>aPuerta</ScriptName>
+                <SourceFileName>C:\Users\manue\Desktop\FDEJ\Noche_Volkeria\Music\puerta.mp3</SourceFileName>
+                <Type>3</Type>
+                <FileLastModifiedDate>2025-04-18 19:13:06Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <BundlingType>InGameEXE</BundlingType>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <DefaultVolume>-1</DefaultVolume>
+                <FileType>MP3</FileType>
+                <ID>4</ID>
+                <Index>13</Index>
+                <ScriptName>aCajaFuerte</ScriptName>
+                <SourceFileName>C:\Users\manue\Desktop\FDEJ\Noche_Volkeria\Music\cajaFuerte.mp3</SourceFileName>
+                <Type>3</Type>
+                <FileLastModifiedDate>2025-04-18 19:17:47Z</FileLastModifiedDate>
+              </AudioClip>
+            </AudioClips>
             <AudioClipFolder>
               <DefaultBundlingType>InGameEXE</DefaultBundlingType>
               <DefaultPriority>Inherit</DefaultPriority>
