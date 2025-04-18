@@ -1069,7 +1069,7 @@
         <InventoryItems>
           <InventoryItem>
             <CursorImage>15</CursorImage>
-            <Description xml:space="preserve">Carta de la hermana de Andres Inquisidor</Description>
+            <Description xml:space="preserve">Carta de la hija de Andres Inquisidor</Description>
             <HotspotX>14</HotspotX>
             <HotspotY>14</HotspotY>
             <ID>1</ID>
