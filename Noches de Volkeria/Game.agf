@@ -1764,7 +1764,78 @@ stop
             <ShowTextParser>False</ShowTextParser>
             <Script><![CDATA[// Dialog script file
 @S  // Dialog startup entry point
+cInquisidor: ¿Que es lo que tienes ahí? Ah, así que la has visto.
+  Wait(3);
+
 return
+//---------- Opciones del jugador ----------
+@1
+cInquisidor: Mi hija fue maldita por un vampiro y cada vez le cuesta más moverse.
+  Wait(3);
+cCharacter: Siento mucho escuchar eso.
+return
+@2
+cInquisidor: Es algo fuera de lo común, ni el obispo mayor ha podido hacer nada.
+  Wait(3);
+cCharacter: ¡MALDITOS vampiros!
+  Wait(1);
+cCharacter: Estoy harto de que nos arrebaten nuestras familias.
+return
+@3
+cInquisidor: JA eso me gustaría verlo.
+  Wait(2);
+cCharacter: La medicina que mencionas se encuentra en el castillo del barón Vlad.
+  Wait(3);
+cInquisidor: Así es, no veo a donde quieres llegar.
+  Wait(3);
+cCharacter: Me estoy dirigiendo hacia el castillo.
+  Wait(1);
+cCharacter: Y resulta que el vampiro de este caso tiene todas las pistas para encontrar el castillo.
+  Wait(3);
+cInquisidor: Espera, entonces... ¿Aún tiene una oportunidad?
+  Wait(2);
+cCharacter: Solo si atrapo a ese vampiro asesino, Inquisidor.
+  Wait(2);
+cInquisidor: (Chasquea la lengua) Si es por mi hija hare lo que sea.
+  cInquisidor.SpeechColor = 64520;
+cInquisidor: Andrés realiza algún ritual que abre la cerradura de la puerta.
+  cInquisidor.SpeechColor = 63;
+cInquisidor: Ya está, ya tienes la puerta abierta. Y Hector, gracias.
+  Wait(2);
+cCharacter: No tienes por qué darlas, al fin y al cabo somos compañeros cazadores.
+  puerta_archivos_abierta = true;
+stop
+]]></Script>
+            <DialogOptions>
+              <DialogOption>
+                <ID>1</ID>
+                <Say>True</Say>
+                <Show>True</Show>
+                <Text xml:space="preserve">¿Que le pasa a tu hija Andrés?</Text>
+              </DialogOption>
+              <DialogOption>
+                <ID>2</ID>
+                <Say>True</Say>
+                <Show>True</Show>
+                <Text xml:space="preserve">¿Que dicen los doctores?</Text>
+              </DialogOption>
+              <DialogOption>
+                <ID>3</ID>
+                <Say>True</Say>
+                <Show>True</Show>
+                <Text xml:space="preserve">Creo que puedo ayudarte.</Text>
+              </DialogOption>
+            </DialogOptions>
+          </Dialog>
+          <Dialog>
+            <ID>3</ID>
+            <Name>dInquisidorAyuda</Name>
+            <ShowTextParser>False</ShowTextParser>
+            <Script><![CDATA[// Dialog script file
+@S  // Dialog startup entry point
+cCharacter: No te veía alguien tan cariñoso Andrés.
+cInquisidor: Callate y ponte a trabajar.
+stop
 ]]></Script>
             <DialogOptions />
           </Dialog>
