@@ -1104,7 +1104,7 @@
                 <Font>3</Font>
                 <Height>14</Height>
                 <ID>1</ID>
-                <Left>72</Left>
+                <Left>74</Left>
                 <Locked>False</Locked>
                 <Name>obj1</Name>
                 <Text xml:space="preserve">- Encontrar el archivo #622</Text>
@@ -1125,7 +1125,7 @@
                 <Left>74</Left>
                 <Locked>False</Locked>
                 <Name>obj2</Name>
-                <Text xml:space="preserve">- Entrar en los archivos</Text>
+                <Text xml:space="preserve">- Persuadir a Andrés Inquisidor</Text>
                 <TextAlignment>Left</TextAlignment>
                 <TextColor>65535</TextColor>
                 <Top>69</Top>
@@ -1670,6 +1670,7 @@ cInquisidor: La entrada a los archivos ha sido denegada a cualquiera, ahora date
   Wait(10);
 cCharacter: (Parece ser que tendré que buscar algo con lo que persuadirle)
   Wait(10);
+  obj2.Visible = true;
 stop]]></Script>
             <DialogOptions />
           </Dialog>
